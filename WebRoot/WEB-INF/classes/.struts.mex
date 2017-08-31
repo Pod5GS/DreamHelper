@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="action" location="59,51" size="182,215">
+    <action name="register" location="23,31" size="150,83">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="login.jsp" />
+      </result>
+      <result name="input">
+        <resourceEdge source="input" routing="0" target="register.jsp" />
+      </result>
+      <result name="error">
+        <resourceEdge source="error" routing="0" target="register.jsp" />
+      </result>
+    </action>
+    <action name="login" location="23,123" size="150,83">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="success.jsp" />
+      </result>
+      <result name="input">
+        <resourceEdge source="input" routing="0" target="login.jsp" />
+      </result>
+      <result name="error">
+        <resourceEdge source="error" routing="0" target="login.jsp" />
+      </result>
+    </action>
+  </package>
+  <webResource name="login.jsp" path="/login.jsp" location="284,424" size="150,55" />
+  <webResource name="register.jsp" path="/register.jsp" location="548,15" size="150,55" />
+  <webResource name="success.jsp" path="/success.jsp" location="497,370" size="150,55" />
+  <webResource name="success.jsp" path="success.jsp" location="593,205" size="150,55" />
+  <webResource name="login.jsp" path="login.jsp" location="350,200" size="150,55" />
+  <webResource name="register.jsp" path="register.jsp" location="50,350" size="150,55" />
+</Struts2Diagram>
+

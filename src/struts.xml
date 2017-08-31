@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+    <constant name="struts.i18n.encoding" value="UTF-8"/>   
+	<package name="action" namespace="/" extends="struts-default">
+		<action name="register" class="action.RegisterAction">
+			<result>sign-in.jsp</result>
+			<result name="input">sign-up.jsp</result>
+			<result name="error">sign-up.jsp</result>
+		</action>
+		<action name="login" class="action.LoginAction">
+			<result name="success">index.jsp</result>
+			<result name="input">sign-in.jsp</result>
+			<result name="error">sign-in.jsp</result>
+		</action>
+		<action name="schoolrecommend" class="action.SchoolrecommendAction">
+			<result name="success">schoolrecommend.jsp</result>
+			<result name="input">schoolrecommend.jsp</result>
+			<result name="error">schoolrecommend.jsp</result>
+		</action>
+		<action name="schoolrecommendwithmajor" class="action.SchoolrecommendwithmajorAction">
+		    <result name="success">schoolrecommendwithmajor.jsp</result>
+			<result name="input">schoolrecommendwithmajor.jsp</result>
+			<result name="error">schoolrecommendwithmajor.jsp</result>
+		</action>
+		<action name="inittest" class="action.InittestAction">
+		    <result name="success">test.jsp</result>
+		    <result name="error">error-page.jsp</result>
+		</action>
+		<action name="test" class="action.TestAction">
+		    <result name="success">test-result.jsp</result>
+		</action>
+		<action name="returnfromresultpage">
+			<result name="success">recommendsubmit.jsp</result>
+		</action>
+		<action name="onloadschoolinquery" class="action.OnloadschoolinqueryAction">
+		    <result name="success">schoolqueryindex.jsp</result>
+		    <result name="error">error-page.jsp</result>
+		</action>
+		<action name="schooldetail" class="action.SchooldetailAction">
+		    <result name="success">schooldetail.jsp</result>
+		    <result name="error">error-page.jsp</result>
+		</action>
+		<action name="schoolcontrast" class="action.SchoolcontrastAction">
+		    <result name="success">schoolcontrast.jsp</result>
+		    <result name="error">error-page.jsp</result>
+		</action>
+		<action name="schoolfilter" class="action.SchoolfilterAction">
+		    <result name="success">schoolqueryindex.jsp</result>
+		    <result name="error">schoolqueryindex.jsp</result>
+		</action>
+		<action name="schoolsearch" class="action.SchoolsearchAction">
+		    <result name="success">schoolqueryindex.jsp</result>
+		    <result name="error">schoolqueryindex.jsp</result>
+		</action>
+	</package>
+</struts>    
